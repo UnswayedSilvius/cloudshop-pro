@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudshop
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloudshop
+  template:
+    metadata:
+      labels:
+        app: cloudshop
+    spec:
+      containers:
+      - name: backend
+        image: cloudshop-backend:latest
+        ports:
+        - containerPort: 5000

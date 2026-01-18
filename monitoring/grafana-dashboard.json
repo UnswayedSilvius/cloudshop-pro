@@ -1,0 +1,10 @@
+{
+  "title": "CloudShop Monitoring",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Service Health",
+      "targets": []
+    }
+  ]
+}
